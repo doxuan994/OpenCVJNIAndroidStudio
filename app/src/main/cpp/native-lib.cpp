@@ -12,3 +12,18 @@ Java_iogithub_1io_github_doxuan994_opencvjniandroidstudio_MainActivity_stringFro
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_iogithub_1io_github_doxuan994_opencvjniandroidstudio_MainActivity_validate(JNIEnv *env,
+                                                                                jobject instance,
+                                                                                jlong matAddrGr,
+                                                                                jlong matAddrRgba) {
+
+    // TODO
+    cv::Rect();
+    cv::Mat();
+    std::string hello2 = "Hello from validate";
+
+
+    return env->NewStringUTF(hello2.c_str());
+}
